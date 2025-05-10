@@ -423,7 +423,7 @@ spec:
             secretName: zabbix-mysql-client-tls-certs
       containers:
         - name: zabbix-server
-          image: zabbix/zabbix-server-mysql:alpine-7.2-latest
+          image: zabbix/zabbix-server-mysql:alpine-7.0.*
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 10051
