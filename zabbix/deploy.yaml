@@ -586,13 +586,6 @@ spec:
             - mountPath: "/tmp/secrets"
               name: mysql-tls-certs
               readOnly: true
-          startupProbe:
-            tcpSocket:
-              port: 10051
-            initialDelaySeconds: 15
-            periodSeconds: 5
-            timeoutSeconds: 3
-            failureThreshold: 40
           securityContext:
             capabilities: {}
             privileged: false
